@@ -1,0 +1,117 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins&display=swap');
+
+* {
+  margin: 0;
+  padding: 0;
+  font-family: 'Poppins', sans-serif;
+  box-sizing: border-box;
+}
+
+.banner {
+  position: relative;
+  height: 100vh; /* Full viewport height */
+  width: 100%;
+  background-size: cover;
+  background-position: center;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  overflow: hidden;
+  background-color: rgb(69, 67, 67);
+}
+
+h2 {
+  position: relative;
+  color: #fff;
+  font-size: 12rem;
+  /* Ensures the title font size is large for large screens */
+}
+
+h5 {
+  color: rgba(255, 255, 255, 0.8);
+}
+
+.clouds {
+  position: absolute;
+  top: 0;
+  left: 0;
+  height: 100%;
+  width: 100%;
+  pointer-events: none;
+}
+
+.clouds img {
+  position: absolute;
+  bottom: 0;
+  max-width: 100%;
+  animation: animate calc(2s * var(--i)) linear infinite;
+}
+
+@keyframes animate {
+  0% {
+    opacity: 0;
+    transform: scale(1);
+  }
+  25%, 75% {
+    opacity: 1;
+  }
+  100% {
+    opacity: 0;
+    transform: scale(3);
+  }
+}
+
+section {
+  padding: 20px 40px;
+}
+
+section h1 {
+  font-size: 4rem;
+  margin-bottom: 20px;
+}
+
+@media screen and (max-width: 1000px) {
+  .banner {
+    height: 80vh; /* Reduce height of banner for medium screens */
+  }
+
+  h2 {
+    font-size: 8rem;
+    /* Slightly smaller font size for screens between 800px - 1000px */
+  }
+
+  section h1 {
+    font-size: 2rem;
+  }
+}
+
+@media screen and (max-width: 800px) {
+  .banner {
+    height: 70vh; /* Further reduce height for smaller screens */
+  }
+
+  h2 {
+    font-size: 6rem;
+    /* Even smaller font size for mobile screens */
+  }
+
+  section h1 {
+    font-size: 1.5rem;
+  }
+}
+
+@media screen and (max-width: 500px) {
+  .banner {
+    height: 60vh; /* Further reduce the height for very small screens */
+  }
+
+  h2 {
+    font-size: 4rem;
+    /* Adjust title font size for extra small screens */
+  }
+
+  section h1 {
+    font-size: 1.2rem;
+  }
+}
