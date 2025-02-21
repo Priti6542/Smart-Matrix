@@ -145,6 +145,8 @@
     }
     .featureItem {
         padding: 10px;
+        text-align: justify;
+        
     }
     .featureItem h2 {
         font-size: 20px;
@@ -152,6 +154,15 @@
     .featureItem p {
         font-size: 14px;
     }
+
+    .featureItem.reversed {
+      
+      flex-direction: column;
+        /* align-items: center; */
+        text-align: justify;
+  
+    }
+  
 }
 
   

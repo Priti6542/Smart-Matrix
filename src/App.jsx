@@ -4,6 +4,7 @@ import HomePage from './pages/HomePage';
 import AboutPage from "./pages/AboutPage";
 import Footer from "./component/footer/Footer";
 import ScrollToTop from "./component/scrolltop/ScrollTop";
+import ServicesPage from "./pages/ServicesPage";
 
 
 function App() {
@@ -15,6 +16,7 @@ function App() {
 
         <Route path="/" element={<HomePage/>}/>
         <Route path="/about" element={<AboutPage/>}/>
+        <Route path="/services" element={<ServicesPage/>}/>
        
        
 
