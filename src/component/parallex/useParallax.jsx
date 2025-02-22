@@ -20,3 +20,4 @@ const useParallax = (speed) => {
 };
 
 export default useParallax;
+
