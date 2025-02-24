@@ -6,6 +6,8 @@ import Footer from "./component/footer/Footer";
 import ScrollToTop from "./component/scrolltop/ScrollTop";
 import ServicesPage from "./pages/ServicesPage";
 import HealthCarePage from "./pages/HealthCarePage";
+import CareerPage from "./pages/CareerPage";
+
 
 
 function App() {
@@ -19,6 +21,8 @@ function App() {
         <Route path="/about" element={<AboutPage/>}/>
         <Route path="/services" element={<ServicesPage/>}/>
         <Route path="/ushealthcare" element={<HealthCarePage/>}/>
+        <Route path="/career" element={<CareerPage/>}/>
+       
        
        
 

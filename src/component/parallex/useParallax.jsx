@@ -16,6 +16,7 @@ const useParallax = (speed) => {
     return () => {
       window.removeEventListener("scroll", handleScroll);
     };
+    
   }, [speed]);
 };
 
