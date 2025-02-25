@@ -36,21 +36,20 @@ const HealthCareData = {
     FeatureSectionData :[
         {
         
-
-          title: "Technical support and maintenance",
+          title: "AR Caller",
           content:
-            "Devcons Software Solutions Pvt. Ltd. offers technical support and maintenance services to ensure that software applications run smoothly and are updated regularly. We track performance metrics, security vulnerabilities, and user behavior, providing insights to ensure smooth sailing. Beyond bug fixes and updates, our comprehensive technical support and maintenance services proactively safeguard the software investments, keeping them future-proof and performing at their peak. We ensure that the systems run smoothly, securely, and always ready for what's next.",
+            "Accounts Receivable (AR) calling is a critical component in the financial ecosystem of healthcare organizations. As a fundamental part of Revenue Cycle Management (RCM), AR calling involves reaching out to payers, insurance companies, or patients to ensure timely and accurate payment for the services rendered. Trained professionals in AR calling navigate through the complexities of claims processing, payment disputes, and reimbursement delays. Their expertise lies in effective communication, negotiation, and resolution of outstanding accounts. In an environment where timely cash flow is paramount, AR calling serves as the frontline defense against revenue interruptions",
           images: 
-            "https://devconsoftware.com/assets/img/features-1.svg",
+            "https://devconsoftware.com/assets/img/ar_calling_services.jpeg",
             
     
           backgroundImage: "https://i.pinimg.com/736x/cd/6f/a9/cd6fa98b64ed44a096fb555fbc065b28.jpg"
         },
         {
      
-          title: "Big data analytics",
+          title: "Medical Coding",
           content:
-            "Devcons Software Solutions Pvt. Ltd. specializes in big data analytics to help businesses make better decisions by analyzing large volumes of data. We dive deep into the vast stores of information, employing sophisticated algorithms and data visualization tools to unearth hidden patterns, predict trends, and optimize decision-making across all levels of your organization. We transcend mere data crunching to empower businesses through our big data analytics expertise. Our data scientists translate complex analytics into tangible business results .",
+            "Medical Coding Services is a specialized function in the Revenue Cycle Management which involves healthcare providers, patients, payers and Physician administrative staff. Medical Coders work in tandem with billers to process accurate revenue codes on the basis of the clinical documentation maintained by the healthcare provider. The expertise of a certified and experienced Medical Coder is to ensure quick and denial-free reimbursement to the providers. Medical Coders play a crucial role in translating complex healthcare information into standardized codes,which are essential for billing processes effective communication among healthcare providers, payers, and administrative staff.",
           images: 
             "https://i.pinimg.com/736x/f3/ed/e7/f3ede74360be860ab11d1c4b1e898189.jpg",
             
@@ -58,9 +57,9 @@ const HealthCareData = {
           backgroundImage: "https://i.pinimg.com/736x/35/9b/74/359b74ab254bc1cd59a661c4a2e258f3.jpg"
         },
         {
-          title: "Artificial intelligence and machine learning",
+          title: "Medical Billing",
           content:
-            "Devcons Software Solutions Pvt. Ltd. offers AI and machine learning services to help businesses leverage these emerging technologies to improve their operations and stay competitive. We unlock the true potential of these transformative technologies, propelling the business towards greater efficiency and innovation. We unleash the alchemy of AI, fusing intelligent algorithms with your existing data and workflows. We're not just about algorithms and code; we're your trusted partner in harnessing the power of AI to solve your unique business challenges.",
+            "As healthcare reforms reshape the industry, medical billing services have become indispensable for practitioners. Facing challenges like increased denials and operating costs, reduced reimbursements, and complex coding requirements, these services act as vital allies. With impending reforms such as the Affordable Care Organization Concept, ICD-10 transition, and HIPAA 5010 compliance, experienced billing services ensure practitioners navigate the evolving landscape seamlessly. By handling intricate coding, compliance, and reimbursement optimization, these services empower healthcare providers to concentrate on industry transformations and their mission to provide excellent patient care.",
           images: 
             "https://devconsoftware.com/assets/img/features-1.svg",
             

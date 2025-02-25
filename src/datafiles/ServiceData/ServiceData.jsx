@@ -58,6 +58,13 @@ const servicesData = [
     //   { id: "it3", title: "Data Science", description: "Master data analysis and predictive modeling." }
     // ]
   },
+
+  {
+    id: 5,
+    
+    title: "Courses",
+    icon: <FaCogs />,
+  }
 ];
 
 export default servicesData;

@@ -23,7 +23,13 @@ const SevicesCardData = {
       { id: "it1", title: "Cybersecurity", description: "Protect systems from digital threats." },
       { id: "it2", title: "AI & Machine Learning", description: "Explore artificial intelligence and ML applications." },
       { id: "it3", title: "Data Science", description: "Master data analysis and predictive modeling." }
+    ],
+    Courses: [
+      { id: "it1", title: "Cybersecurity", description: "Protect systems from digital threats." },
+      { id: "it2", title: "AI & Machine Learning", description: "Explore artificial intelligence and ML applications." },
+      { id: "it3", title: "Data Science", description: "Master data analysis and predictive modeling." }
     ]
+
   };
   
   

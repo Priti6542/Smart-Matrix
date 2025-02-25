@@ -1,46 +1,34 @@
-// FeatureSection.js
 import React from "react";
-import HomeData from '../../../datafiles/HomeData/HomeData';
-import styles from './ARMedicalBilling.module.css'; // Import the modular CSS
-import useParallax from "../../parallex/useParallax";
+import HealthCareData from "../../../datafiles/healthcare/HealthCareData";
+import styles from "./ARMedicalBilling.module.css";
 
-const ARMedicalBilling= () => {
+const FeatureSection = () => {
   return (
-    <div className={styles.featureSection}>
-    <h1>OUR FEATURES</h1>
-      {HomeData.FeatureSectionData.map((feature, index) => (
-        <FeatureItem
-          key={index}
-          title={feature.title}
-          content={feature.content}
-          image={feature.images}
-          backgroundImage={feature.backgroundImage}
-          speed={0.5} // Set the parallax speed for each section
-          isReversed={index % 2 !== 0} // Alternate layout for even-indexed items
-        />
-      ))}
-    </div>
-  );
-};
+    <div className={styles.section}>
+      <h1 className={styles.heading}>Our Healthcare Features</h1>
+      <div className={styles.featureContainer}>
+        {HealthCareData.FeatureSectionData.map((feature, index) => (
+          <div
+            key={index}
+            className={`${styles.featureItem} ${index % 2 === 0 ? styles.reverse : ""}`}
+          >
+            {/* Left Side - Image */}
+            <div className={styles.imageContainer}>
+            <img src={feature.images} alt={feature.title} className={styles.iconImage} />
 
-const FeatureItem = ({ title, content, image, backgroundImage, speed, isReversed }) => {
-  useParallax(speed); // Apply parallax effect with the given speed
+              {/* <img src={feature.backgroundImage} alt={feature.title} className={styles.featureImage} /> */}
+            </div>
 
-  return (
-    <div className={`${styles.featureItem} ${isReversed ? styles.reversed : ""}`}>
-      <div
-        className={styles.featureItemBackground}
-        style={{ backgroundImage: `url(${backgroundImage})` }}
-        data-speed={speed}
-      ></div>
-      <div className={styles.content }>
-        <h2>{title}</h2>
-        <p>{content}</p>
-        
+            {/* Right Side - Information */}
+            <div className={styles.textContainer}>
+              <h2 className={styles.title}>{feature.title}</h2>
+              <p className={styles.description}>{feature.content}</p>
+            </div>
+          </div>
+        ))}
       </div>
-      <img src={image} alt={title} className={styles.featureImage} />
     </div>
   );
 };
 
-export default ARMedicalBilling;
+export default FeatureSection;

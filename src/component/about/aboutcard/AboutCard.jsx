@@ -1,57 +1,41 @@
 import React from "react";
-import { Container, Typography, Card, CardContent } from "@mui/material";
 import { motion } from "framer-motion";
 import AboutData from "../../../datafiles/AboutData/AboutData";
+import styles from "./AboutCard.module.css"; // Import CSS Module
 
 const AboutCard = () => {
-  const {  AboutCard } = AboutData;
+  const { AboutCard } = AboutData;
+  const item = AboutCard[0]; // Only use the first item
 
   return (
-    <Container maxWidth="lg" sx={{ mt: 5 }}>
-      
-
-      {/* About Card Section */}
+    <div className={styles.wrapper}>
       <motion.div
-        initial={{ opacity: 0, y: 50 }}
-        animate={{ opacity: 1, y: 0 }}
-        transition={{ duration: 1 }}
-        style={{ display: "flex", justifyContent: "center", marginTop: "40px" }}
+        initial={{ opacity: 0, scale: 0.9 }}
+        animate={{ opacity: 1, scale: 1 }}
+        transition={{ duration: 0.8 }}
+        className={styles.cardContainer}
       >
-        {AboutCard.map((item, index) => (
-          <Card
-            key={index}
-            sx={{
-              maxWidth: 800,
-              borderRadius: "12px",
-              boxShadow: "0px 4px 15px rgba(0, 0, 0, 0.3)",
-              overflow: "hidden",
-            }}
-          >
-            {/* Video Section */}
-            <video
-              src={item.video}
-              autoPlay
-              loop
-              muted
-              style={{ width: "100%", height: "300px", objectFit: "cover" }}
-            />
+        {/* Video Background */}
+        <div className={styles.videoSection}>
+          <div className={styles.videoOverlay}></div>
+          <video
+            src={item.video}
+            autoPlay
+            loop
+            muted
+            className={styles.video}
+          />
+        </div>
 
-            {/* Card Content */}
-            <CardContent>
-              <Typography variant="h4" fontWeight="bold" gutterBottom>
-                {item.Heading}
-              </Typography>
-              <Typography variant="h6" color="text.secondary" gutterBottom>
-                {item.title}
-              </Typography>
-              <Typography variant="body1" color="text.secondary" paragraph>
-                {item.description}
-              </Typography>
-            </CardContent>
-          </Card>
-        ))}
+        {/* Text Content */}
+        <div className={styles.contentSection}>
+          <h2 className={styles.heading}>{item.Heading}</h2>
+          <h3 className={styles.subTitle}>{item.title}</h3>
+          <p className={styles.description}>{item.description}</p>
+          {/* <button className={styles.exploreBtn}>Learn More</button> */}
+        </div>
       </motion.div>
-    </Container>
+    </div>
   );
 };
 

@@ -39,16 +39,16 @@
 .circle::after {
   content: "";
   position: absolute;
-  width: 60%;
-  height: 5px;
+  width: 100px;  /* Increased width */
+  height: 8px;   /* Increased height */
   border-radius: 20px;
   top: 50%;
   left: 100%;
-  transform: translateY(-50%);
-  transform: translateX(70%);
+  transform: translateY(-50%) translateX(70%);
   background: linear-gradient(90deg, #007bff, #063c47);
   animation: swipeEffect 2.5s infinite alternate ease-in-out;
 }
+
 
 /* Remove the connecting line for the last circle */
 .container .cardWrapper:last-child .circle::after {
@@ -66,14 +66,15 @@
     background: linear-gradient(90deg, transparent, #00d4ff);
   }
   50% {
-    width: 40px;
+    width: 80px; /* Adjusted to match the new connecting line size */
     background: linear-gradient(90deg, #007bff, #00d4ff);
   }
   100% {
-    width: 40px;
+    width: 100px; /* Final width */
     background: linear-gradient(90deg, transparent, #007bff);
   }
 }
+
 
 
 /* Icon and Description Section */
@@ -90,11 +91,12 @@
   height: 50px;
   margin-top: 10px;
 } */
+
 .details {
   font-size: 17px;
   color: #333;
   margin-top: 40px;
-  max-width: 300px;
+  max-width: 340px;
   height: 450px;
   background-color: #bff1fb;
   box-shadow: 0 0 10px rgba(20, 56, 94, 0.5);

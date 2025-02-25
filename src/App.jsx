@@ -7,6 +7,7 @@ import ScrollToTop from "./component/scrolltop/ScrollTop";
 import ServicesPage from "./pages/ServicesPage";
 import HealthCarePage from "./pages/HealthCarePage";
 import CareerPage from "./pages/CareerPage";
+import ContactPage from "./pages/ContactPage";
 
 
 
@@ -22,6 +23,7 @@ function App() {
         <Route path="/services" element={<ServicesPage/>}/>
         <Route path="/ushealthcare" element={<HealthCarePage/>}/>
         <Route path="/career" element={<CareerPage/>}/>
+        <Route path="/contact" element={<ContactPage/>}/>
        
        
        
