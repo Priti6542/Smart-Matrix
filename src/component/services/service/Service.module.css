@@ -137,11 +137,6 @@
     color: white;
 }
 
-
-  
-
-
-
 /* Icon inside service item */
 .icon {
     font-size: 35px;
@@ -199,35 +194,152 @@
 
 /* 🔹 Responsive Design (Tablets & Laptops) */
 
-
-@media (min-width: 768px){
-
+/* Tablets */
+@media (max-width: 1024px) {
+    .ServicesDataContainer {
+        height: auto;
+        padding: 50px 0;
+    }
+    
     .centerCircle {
-        /* position: absolute; */
-        width: 60px  !important;
-        height: 60px !important;
-        
+        width: 150px;
+        height: 150px;
+        font-size: 20px;
     }
 
     .serviceItem {
-        position: absolute;
-        width: 100px;
-        height: 150px;
-        background: rgba(255, 255, 255, 0.15);
-        border-radius: 50%;
-        display: flex;
-        align-items: center;
-        justify-content: center;
-        flex-direction: column;
-        text-align: center;
-        cursor: pointer;
-        transition: transform 0.3s ease-in-out, box-shadow 0.3s ease-in-out, background 0.3s ease-in-out;
-        box-shadow: 0 0 15px rgba(0, 255, 255, 0.3);
-        animation: fadeIn 1s ease-in-out;
-        backdrop-filter: blur(8px);
-        border: 1px solid rgba(255, 255, 255, 0.3);
-        z-index: -1;
-        
+        width: 130px;
+        height: 130px;
+        font-size: 16px;
+    }
+
+    .serviceDetails {
+        width: 70%;
     }
 }
 
+/* Mobile Devices */
+@media (max-width: 768px) {
+    .ServicesDataContainer {
+        height: auto;
+        flex-direction: column;
+        padding: 40px 0;
+    }
+
+    .centerCircle {
+        width: 130px;
+        height: 130px;
+        font-size: 18px;
+    }
+
+    .serviceItems {
+        flex-direction: column;
+        gap: 20px;
+        align-items: center;
+    }
+
+    .serviceItem {
+        position: static;
+        width: 120px;
+        height: 120px;
+    }
+
+    .serviceDetails {
+        width: 80%;
+        padding: 15px;
+    }
+}
+
+/* Small Mobile Devices */
+@media (max-width: 480px) {
+    .ServicesDataContainer {
+        padding: 30px 0;
+    }
+
+    .centerCircle {
+        width: 100px;
+        height: 100px;
+        font-size: 16px;
+    }
+
+    .serviceItem {
+        width: 100px;
+        height: 100px;
+        font-size: 14px;
+    }
+
+    .serviceDetails {
+        /* width: 90%; */
+        /* padding: 10px; */
+    }
+
+    .centerCircle::before {
+        content: "";
+        position: absolute;
+        width: 110px;
+        height: 110px;
+        
+    }
+    
+    .serviceDetails {
+        width: 90%;  /* Make it wider for small screens */
+        padding: 10px;
+        font-size: 14px;  /* Reduce text size for readability */
+        bottom: 10px;  /* Adjust position */
+    }
+}
+
+/* 🔹 Responsive for Tablets (768px) */
+@media (max-width: 768px) {
+    .serviceItem:nth-child(1) { top: -120px; left: -40px; }  
+    .serviceItem:nth-child(2) { top: -90px; left: 20px; } 
+    .serviceItem:nth-child(3) { top: -20px; left: 0px; }
+    .serviceItem:nth-child(4) { top: 10px; left: -70px; }
+    .serviceItem:nth-child(5) { top: -30px; left: -110px; }
+    .serviceItem:nth-child(6) { top: -90px; left: -100px; }
+}
+
+.icon {
+    font-size: 30px;
+    margin-bottom: 1px;
+}
+
+
+/* 🔸 Responsive for Mobile (480px) */
+@media (max-width: 480px) {
+    .serviceItem {
+        position: relative;  /* Ensure items are positioned dynamically */
+        width: 120px;
+        height: 120px;
+        font-size: 10px;
+        
+    }
+
+    .serviceItem:nth-child(1) { top: 240px; left: -100px; }  
+    .serviceItem:nth-child(2) { top: 65px; left: 45px; } 
+    .serviceItem:nth-child(3) { top: 34px; left: 146px; }
+    .serviceItem:nth-child(4) { top: 39px; left: 102px; }
+    .serviceItem:nth-child(5) { top: -70px; left: -40px; }
+    .serviceItem:nth-child(6) { top: -320px; left: -146px; }
+}
+
+
+.icon {
+    font-size: 30px;
+    margin-top: -10px;
+}
+
+/* 🔻 Responsive for Extra Small Mobile (320px) */
+@media (max-width: 320px) {
+    .serviceItem {
+        width: 80px;
+        height: 80px;
+    }
+
+    .serviceItem:nth-child(1) { top: 5px; left: -10px; }  
+    .serviceItem:nth-child(2) { top: 0px; left: 20px; } 
+    .serviceItem:nth-child(3) { top: 15px; left: -5px; }
+    .serviceItem:nth-child(4) { top: 20px; left: -40px; }
+    .serviceItem:nth-child(5) { top: 5px; left: -60px; }
+    .serviceItem:nth-child(6) { top: -30px; left: -40px; }
+}
