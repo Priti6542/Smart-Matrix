@@ -24,19 +24,17 @@ const Internship = () => {
               </div>
               <h3 className={styles.title}>{item.title}</h3>
               <p className={styles.description}>{item.description}</p>
-              <h4>🎓 Qualifications:</h4>
+              <h4><b>🎓 Qualifications:</b></h4>
               <p className={styles.qualification}>{item.qualification}</p>
-              <h4>🎯 Benefits:</h4>
+              <h4><b>🎯 Benefits:</b></h4>
               <p className={styles.benefits}>{item.benefits}</p>
               {/* Apply Button - Opens Google Form */}
-              <a 
-  href={googleFormURL} 
-  target="_blank" 
-  rel="noopener noreferrer" 
-  className={styles.applyButton}
->
-  Apply Now
-</a>
+              <button
+                onClick={() => window.open(googleFormURL, "_blank", "noopener,noreferrer")}
+                className={styles.applyButton}
+              >
+                Apply Now
+              </button>
 
 
 

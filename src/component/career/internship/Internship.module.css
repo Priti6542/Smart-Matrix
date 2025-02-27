@@ -62,6 +62,11 @@
     position: relative;
     overflow: hidden;
     transition: transform 0.3s ease, box-shadow 0.3s ease;
+    text-align: justify;
+}
+
+.title{
+    font-weight: bold;
 }
 
 /* Soft Hover Effect */
@@ -100,16 +105,24 @@
     transform: scale(1.2);
 }
 
-.applyButton{
+.applyButton {
     background-color: rgb(255, 194, 81);
+    align-items: center;
+    justify-content: center;
+    display: flex;
+    margin-top: 20px;
     border-radius: 5px;
-    padding: 5px;
-    
-        pointer-events: auto !important; /* Ensure clicks are allowed */
-        z-index: 10; /* Ensure it's above other elements */
-      
-      
+    padding: 10px 20px; /* Adjust padding for better appearance */
+    pointer-events: auto !important;
+    z-index: 10;
+
+    /* Center the button */
+    margin-left: auto;
+    margin-right: auto;
+    display: block;
+    text-align: center;
 }
+
 .applyButton:hover{
     background-color: orange;
 }
