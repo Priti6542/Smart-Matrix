@@ -5,7 +5,7 @@ const NavbarData=[
         { title: 'Services', path: '/services' },
         {title:'US Healthcare',path:'/ushealthcare'},
         {title:'Career',path:'/career'},
-        {title:'Outstanding',path:'/outstanding'},
+        // {title:'Outstanding',path:'/outstanding'},
         {title:'Contact',path:'/contact'}
 
 ]

@@ -12,7 +12,7 @@ const CareerHero = () => {
       <div className={styles.careerHeroContent}>
         <h1>{CareerData.CareerHero[0].title}</h1>
         <p>{CareerData.CareerHero[0].description}</p>
-        <button className={styles.heroButton}>Learn More</button>
+        {/* <button className={styles.heroButton}>Learn More</button> */}
       </div>
     </div>
   );

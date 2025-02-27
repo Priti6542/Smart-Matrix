@@ -4,6 +4,8 @@ import { motion } from "framer-motion";
 import AboutData from "../../../datafiles/AboutData/AboutData";
 
 const AboutHero = () => {
+
+  
   const { backgroundImage, title, description } = AboutData.AboutHero[0];
 
   // Animation Variants
@@ -99,7 +101,7 @@ const AboutHero = () => {
           </motion.div>
 
           {/* Button Animation */}
-          <motion.div variants={buttonVariants} whileHover="hover">
+          {/* <motion.div variants={buttonVariants} whileHover="hover">
             <Button
               variant="contained"
               color="warning"
@@ -113,7 +115,7 @@ const AboutHero = () => {
             >
               Know More
             </Button>
-          </motion.div>
+          </motion.div> */}
         </Box>
 
         {/* Floating Animation */}
