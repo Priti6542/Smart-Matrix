@@ -48,7 +48,8 @@ const CareerData = {
             title:"Front-end-Developer",
             description:"You will have the opportunity to apply your knowledge of HTML, CSS, and JavaScript to design and implement user-friendly websites and web applications.",
             qualification:"Proficiency in HTML, CSS, and JavaScript,Familiarity with front-end frameworks such as React, Angular, or Vue.js (preferred but not required).,Strong problem-solving and analytical skills.",
-            benefits:"Hands-on experience working on real-world projects.,Mentorship and guidance from experienced developers.,Exposure to industry-standard tools and technologies."
+            benefits:"Hands-on experience working on real-world projects.,Mentorship and guidance from experienced developers.,Exposure to industry-standard tools and technologies.",
+            // button:"apply now"
         },
         {
             title:"Front-end-Developer",

@@ -68,6 +68,18 @@ const HealthCareData = {
         },
         
       ],
+
+      TrustedData:[
+        
+          {image:"https://smartsoftwareservice.com/images/client-1.png"},
+          {image:"https://smartsoftwareservice.com/images/client-2.png"},
+          {image:"https://smartsoftwareservice.com/images/client-3.png"},
+          {image:"https://smartsoftwareservice.com/images/client-4.png"},
+          {image:"https://smartsoftwareservice.com/images/client-5.jpg"},
+          {image:"https://smartsoftwareservice.com/images/client-6.jpg"},
+        
+      ]
 };
 
 export default HealthCareData;
+

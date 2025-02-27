@@ -1,3 +1,12 @@
+
+import WindowIcon from '@mui/icons-material/Window';
+import LanguageIcon from '@mui/icons-material/Language';
+import AdbIcon from '@mui/icons-material/Adb';
+import WebStoriesIcon from '@mui/icons-material/WebStories';
+import BrandingWatermarkIcon from '@mui/icons-material/BrandingWatermark';
+import ScreenSearchDesktopIcon from '@mui/icons-material/ScreenSearchDesktop';
+import FilterDramaIcon from '@mui/icons-material/FilterDrama';
+
 const AboutData = {
     AboutHero: [
         {
@@ -30,6 +39,52 @@ const AboutData = {
           description: "Our Values Devcons Software Solutions Pvt. Ltd. is driven by a commitment to innovation, integrity, customer satisfaction, collaboration, and excellence while embracing adaptability and social responsibility as core values.",
         },
     ],
+
+    ContentData:[
+      {
+        icon:WindowIcon,
+        title: "Software Designing",
+        description: "We provide all commercial or organizational software development service at minimal cost.",
+      },
+      {
+        icon:LanguageIcon,
+        title: "Web Designing",
+        description: "We make web designing responsive so you can use your website on all modern devices like smartphone, tablet, or desktop."
+      },
+      {
+        icon:AdbIcon,
+        title: "App Development",
+        description: "If you want to expand your business with android app, SMART SOFTWARE SERVICES is the right thing.",
+      },
+      {
+        icon:WebStoriesIcon,
+        title: "Logo Designing",
+        description:"We have certified designer who make logo to keep in mind with company motto."
+      },
+
+      
+      {
+        icon:BrandingWatermarkIcon,
+        title: "Branding",
+        description: "Smart Software provide branding service to growth your bussiness.",
+      },
+
+      {
+        icon:ScreenSearchDesktopIcon,
+        title: "SEO",
+        description: "Our team help your bussiness with search engine optimazation.",
+      },
+      {
+        icon:FilterDramaIcon,
+        title: "Web Hosting",
+        description: "We provide web hosting as well as per your business requirement.",
+      },
+      {
+        icon:WindowIcon,
+        title: "Digital Markiting",
+        description:"Digital marketing is the right solution for your bussiness then get back with us.",
+      },
+    ]
 };
 
 export default AboutData;

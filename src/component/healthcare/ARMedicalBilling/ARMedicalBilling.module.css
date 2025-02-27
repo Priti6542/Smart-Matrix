@@ -4,7 +4,7 @@
   padding-top: 100px;
   padding-left: 9rem;
   padding-right: 9rem;
-  height: 10%;
+  /* height: 10%; */
   /* background: radial-gradient(circle, #d4e0f5, #e9effa); */
 }
 
@@ -40,7 +40,7 @@
 .featureItem {
   display: flex;
   align-items: center;
-  width: 85%;
+  width: 1200px;
   background: rgba(255, 255, 255, 0.15);
   border-radius: 20px;
   box-shadow: 0 10px 30px rgba(0, 0, 0, 0.2);

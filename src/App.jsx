@@ -1,3 +1,4 @@
+import React from "react";
 import {Routes,Route} from "react-router-dom";
 import Navbar from './component/navbar/Navbar';
 import HomePage from './pages/HomePage';

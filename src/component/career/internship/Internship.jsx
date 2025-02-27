@@ -5,6 +5,8 @@ import { FaLaptopCode, FaCheckCircle, FaRocket } from "react-icons/fa";
 
 const icons = [FaLaptopCode, FaCheckCircle, FaRocket]; // Rotating icons
 
+const googleFormURL = "https://www.google.com";
+
 const Internship = () => {
   return (
     <div className={styles.internshipSection}>
@@ -26,7 +28,18 @@ const Internship = () => {
               <p className={styles.qualification}>{item.qualification}</p>
               <h4>🎯 Benefits:</h4>
               <p className={styles.benefits}>{item.benefits}</p>
-              {/* <button className={styles.applyButton}>Apply Now</button> */}
+              {/* Apply Button - Opens Google Form */}
+              <a 
+  href={googleFormURL} 
+  target="_blank" 
+  rel="noopener noreferrer" 
+  className={styles.applyButton}
+>
+  Apply Now
+</a>
+
+
+
               {/* <div className={styles.glow}></div> Neon Glow Effect */}
             </div>
           );

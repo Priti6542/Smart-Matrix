@@ -71,3 +71,59 @@
     color: #666;
   }
   
+
+/* ✅ Responsive Design Adjustments */
+
+/* Tablet View */
+@media (max-width: 1024px) {
+  .cardContainer {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .card {
+    max-width: 90%;
+    text-align: center;
+  }
+}
+
+/* Mobile View */
+@media (max-width: 768px) {
+  .verticalLine {
+    left: 10px; /* Moves the timeline to the left */
+    transform: none;
+    display: none;
+  }
+
+  .circle {
+    left: 10px;
+    transform: none;
+  }
+
+  .cardContainer {
+    flex-direction: column;
+    align-items: flex-start;
+    margin-bottom: 20px;
+  }
+
+  .card {
+    max-width: 100%;
+    text-align: left;
+    
+  }
+}
+
+/* Small Mobile View */
+@media (max-width: 480px) {
+  .card {
+    padding: 15px;
+  }
+
+  .cardTitle {
+    font-size: 16px;
+  }
+
+  .cardDescription {
+    font-size: 14px;
+  }
+}

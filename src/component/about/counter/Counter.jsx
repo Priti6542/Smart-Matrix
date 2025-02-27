@@ -14,9 +14,11 @@ function Counter() {
                 justifyContent: "center", 
                 alignItems: "center", 
                 flexWrap: "wrap", 
-                gap: 4, 
-                mt: 4, 
-                textAlign: "center"
+                gap: 5, 
+                mt: 10, 
+                textAlign: "center",
+                marginLeft:"9rem",
+                marginRight:"9rem",
             }}
         >
             {/* Clients */}
@@ -26,7 +28,7 @@ function Counter() {
                     p: 3, 
                     borderRadius: 4, 
                     textAlign: "center", 
-                    minWidth: "200px",
+                    minWidth: "260px",
                     backgroundColor: "#f3f4f6",
                     transition: "transform 0.3s ease-in-out",
                     "&:hover": { transform: "scale(1.1)" }
@@ -46,7 +48,7 @@ function Counter() {
                     p: 3, 
                     borderRadius: 4, 
                     textAlign: "center", 
-                    minWidth: "200px",
+                    minWidth: "260px",
                     backgroundColor: "#f3f4f6",
                     transition: "transform 0.3s ease-in-out",
                     "&:hover": { transform: "scale(1.1)" }
@@ -66,7 +68,7 @@ function Counter() {
                     p: 3, 
                     borderRadius: 4, 
                     textAlign: "center", 
-                    minWidth: "200px",
+                    minWidth: "260px",
                     backgroundColor: "#f3f4f6",
                     transition: "transform 0.3s ease-in-out",
                     "&:hover": { transform: "scale(1.1)" }
@@ -86,7 +88,7 @@ function Counter() {
                     p: 3, 
                     borderRadius: 4, 
                     textAlign: "center", 
-                    minWidth: "200px",
+                    minWidth: "260px",
                     backgroundColor: "#f3f4f6",
                     transition: "transform 0.3s ease-in-out",
                     "&:hover": { transform: "scale(1.1)" }

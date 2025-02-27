@@ -1,85 +1,73 @@
 import React from "react";
-import { Box, Typography, Grid, List, ListItem, ListItemText, IconButton, Link } from "@mui/material";
-import { Facebook, Twitter, Instagram, LinkedIn } from "@mui/icons-material";
-import footerData from "../../datafiles/FooterData";
+import { Box, Typography, Button, Divider, Grid, IconButton } from "@mui/material";
+import { FaFacebookF, FaTwitter, FaInstagram, FaYoutube } from "react-icons/fa";
 
-function Footer() {
+const Footer = () => {
   return (
-    <Box component="footer" sx={{ backgroundColor: "rgb(93, 98, 98)", color: "white", p: 4, mt: 4 ,borderRadius:"10px", paddingLeft:"10rem",paddingRight:"10rem"}}>
-      <Grid container spacing={4} justifyContent="center">
+    <Box sx={{ bgcolor: "#212121", color: "#bdbdbd", py: 6, px: 3 }}>
+      {/* CTA Section */}
+      <Box maxWidth="lg" mx="auto" textAlign={{ xs: "center", md: "left" }}>
+        <Typography variant="caption" textTransform="uppercase" color="gray">
+          Get started
+        </Typography>
+        <Typography variant="h5" fontWeight="bold" color="white" mt={1}>
+          Boost your productivity. <br /> Start using our app today.
+        </Typography>
+        <Button
+          variant="contained"
+          sx={{ mt: 3, bgcolor: "#ff7043", ":hover": { bgcolor: "#f4511e" } }}
+        >
+          Get Started
+        </Button>
+      </Box>
+
+      {/* Footer Links Section */}
+      <Divider sx={{ my: 5, bgcolor: "#424242" }} />
+      <Grid container spacing={1} maxWidth="lg" mx="auto">
+        <Grid item xs={12} md={3} textAlign={{ xs: "center", md: "left" }}>
+          <img src="https://smartmatrixds.com/assets/img/smds-logo.jpeg" alt="Company Logo" style={{ height: 40 }} />
+        </Grid>
         
-        {/* About Section */}
-        <Grid item xs={12} sm={6} md={3}>
-          <Typography variant="h6">{footerData[0].heading}</Typography>
-          <img
-            src={footerData[0].about.logo}
-            alt="Company Logo"
-            style={{ width: "120px", marginBottom: "10px" }}
-          />
-          <Typography variant="body2">{footerData[0].about.description}</Typography>
-          <Box>
-            {footerData[0].about.socialLinks.map((social, index) => {
-              const Icon = social.icon === "facebook" ? Facebook :
-                           social.icon === "twitter" ? Twitter :
-                           social.icon === "instagram" ? Instagram :
-                           LinkedIn;
-              return (
-                <IconButton key={index} href={social.url} target="_blank" sx={{ color: "white" }}>
-                  <Icon />
-                </IconButton>
-              );
-            })}
-          </Box>
-        </Grid>
-
-        {/* Useful Links */}
-        <Grid item xs={12} sm={6} md={3}>
-          <Typography variant="h6">{footerData[1].heading}</Typography>
-          <List>
-            {footerData[1].usefulLinks.map((link, index) => (
-              <ListItem key={index} disablePadding>
-                <ListItemText>
-                  <Link href={link.path} color="inherit" underline="hover">
-                    {link.title}
-                  </Link>
-                </ListItemText>
-              </ListItem>
-            ))}
-          </List>
-        </Grid>
-
-        {/* Our Services */}
-        <Grid item xs={12} sm={6} md={3}>
-          <Typography variant="h6">{footerData[2].heading}</Typography>
-          <List>
-            {footerData[2].services.map((service, index) => (
-              <ListItem key={index} disablePadding>
-                <ListItemText primary={service} />
-              </ListItem>
-            ))}
-          </List>
-        </Grid>
-
-        {/* Contact Us */}
-        <Grid item xs={12} sm={6} md={3}>
-          <Typography variant="h6">{footerData[3].heading}</Typography>
-          <Typography variant="body2">{footerData[3].contact.address}</Typography>
-          <Typography variant="body2">Phone: {footerData[3].contact.phone}</Typography>
-          <Typography variant="body2">
-            Email:{" "}
-            <Link href={`mailto:${footerData[3].contact.email}`} color="inherit" underline="hover">
-              {footerData[3].contact.email}
-            </Link>
-          </Typography>
-        </Grid>
+        {["Solutions", "Support", "Company"].map((section, index) => (
+          <Grid item xs={12} md={3} key={index}>
+            <Typography variant="subtitle1" color="white" fontWeight="bold">
+              {section}
+            </Typography>
+            <Box mt={2}>
+              {section === "Solutions" && ["Marketing", "Analytics", "Automation", "Commerce", "Insights"].map((item) => (
+                <Typography key={item} variant="body2" sx={{ cursor: "pointer", ":hover": { color: "white" } }}>
+                  {item}
+                </Typography>
+              ))}
+              {section === "Support" && ["Submit ticket", "Documentation", "Guides"].map((item) => (
+                <Typography key={item} variant="body2" sx={{ cursor: "pointer", ":hover": { color: "white" } }}>
+                  {item}
+                </Typography>
+              ))}
+              {section === "Company" && ["About", "Blog", "Jobs", "Press"].map((item) => (
+                <Typography key={item} variant="body2" sx={{ cursor: "pointer", ":hover": { color: "white" } }}>
+                  {item}
+                </Typography>
+              ))}
+            </Box>
+          </Grid>
+        ))}
       </Grid>
-
-      {/* Copyright */}
-      <Box sx={{ textAlign: "center", mt: 3, pt: 2, borderTop: "1px solid gray" }}>
-        <Typography variant="body2">© 2024 Devcons Software Solutions Pvt. Ltd. All Rights Reserved</Typography>
+      
+      {/* Social Media & Copyright */}
+      <Divider sx={{ my: 5, bgcolor: "#424242" }} />
+      <Box maxWidth="lg" mx="auto" textAlign="center" display="flex" flexDirection={{ xs: "column", md: "row" }} justifyContent="space-between" alignItems="center">
+        <Typography variant="body2" color="gray">© 2024 Your Company, Inc. All rights reserved.</Typography>
+        <Box mt={{ xs: 2, md: 0 }}>
+          {[FaFacebookF, FaTwitter, FaInstagram, FaYoutube].map((Icon, index) => (
+            <IconButton key={index} sx={{ color: "gray", ":hover": { color: "white" } }}>
+              <Icon size={18} />
+            </IconButton>
+          ))}
+        </Box>
       </Box>
     </Box>
   );
-}
+};
 
 export default Footer;
